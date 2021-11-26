@@ -1,0 +1,182 @@
+html,
+body {
+  min-height: 100%;
+  background: linear-gradient(45deg, #2c2c2c, #4f2b79);
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.title {
+  padding: 1%;
+  padding-left: 3%;
+}
+
+.main_container {
+  display: flex;
+  height: 100%;
+}
+
+.search_panel {
+  width: 23%;
+  align-content: center;
+  text-align: center;
+}
+
+.search_input {
+  font-size: medium;
+  border: none;
+  margin: 4%;
+  padding: 5%;
+  width: 70%;
+  height: 2%;
+  color: white;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.genre_search{
+    width: 30%;
+    min-height: 50px;
+    min-width: 70px;
+}
+
+.search_button {
+  background-color: rgb(148, 0, 116);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 4%;
+  width: 35%;
+  opacity: 0.5;
+  min-height: 35px;
+  border-radius: 15px;
+}
+
+.search_button:hover {
+  transform: scale(1.1);
+  background-color: rgb(129, 2, 102);
+}
+
+.input_selcted:focus {
+  outline: black;
+}
+
+.vertcal_line {
+  width: 1px;
+  background-color: grey;
+  opacity: 0.3;
+  height: 100%;
+}
+
+.finded_songs {
+  margin-left: 2%;
+  width: 75%;
+}
+
+.song {
+  background-color: rgba(153, 42, 197, 0.2);
+  display: flex;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.1em;
+  padding-top: 0.3em;
+  padding-left: 1em;
+  vertical-align: middle;
+  height: 1.6em;
+  align-content: flex-end;
+  justify-content: space-between;
+}
+
+.search_reasult_panel {
+  margin: 0;
+  text-align: center;
+  width: 30%;
+}
+
+.group_container {
+  height: 60%;
+  overflow-y: auto;
+}
+
+.music_panel {
+  float: left;
+  height: 30%;
+  width: 50%;
+  border-radius: 25px;
+  margin-bottom: 2em;
+  margin-left: 30%;
+}
+
+.music_panel:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.music_picture {
+  height: 100%;
+  width: 100%;
+  background-image: url("images/Dragons.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+.group_name {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 6%;
+}
+
+.buy_button{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 10%;
+    height: 90%;
+    opacity: 0.5;
+    border-radius: 15px;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 960px) {
+    .search_reasult_panel
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main_container
+    {
+        flex-wrap: wrap;
+        height: 30%;
+        width: 100%;
+        text-align: center;
+    }
+    .search_panel
+    {
+        display: flex;
+        width: 100%;
+    }
+    .search_input{
+        margin: 1px;
+        height: 10px;
+        padding: 10px;
+        min-height: 40px;
+        min-width: 40px;
+    }
+    .vertcal_line{
+        display: none;
+    }
+    .finded_songs
+    {
+        margin: auto;
+    }
+}
